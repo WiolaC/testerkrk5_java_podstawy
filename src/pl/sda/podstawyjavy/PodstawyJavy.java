@@ -2,17 +2,18 @@ package pl.sda.podstawyjavy;
 
 public class PodstawyJavy {
     public static void main (String[]args){
-       char[][] mojaTablica = {
-               {'H','e','l','l','o'},
-               {' ', 'W','o','r','l','d'}
-       };
+        int[][] mojaTablicaInt = {{1,2,3,45},{3,4,5},{5,7,8}};
 
-       for (int i = 0; i < mojaTablica.length; i++){
-           System.out.print(mojaTablica[i]);
-       }
+        for (int i = 0; i<mojaTablicaInt.length; i++){
+            for (int j =0; j<mojaTablicaInt[i].length;j++){
+                System.out.print(mojaTablicaInt[i][j]);
+            }
+            System.out.println();
+        }
+
 
     }
-    //wywołanie metody
+
 
     void wydrukujArgumenty(String[] args) {
         for (int i = 0; i < args.length; i++) {
