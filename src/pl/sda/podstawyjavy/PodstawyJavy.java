@@ -11,6 +11,8 @@ public class PodstawyJavy {
 
         komunikatyDlaLiczb.ustawWartoscZmiennejLIczba(3);
         System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+        komunikatyDlaLiczb.ustawWartosciZmiennejLiczba(500,76,10,6,3);
+        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
     }
 
 }
