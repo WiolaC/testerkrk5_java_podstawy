@@ -3,7 +3,7 @@ package pl.sda.podstawyjavy;
 import java.util.Scanner;
 
 public class KomunikatyDlaLiczb {
-    int liczba = -1; //zmienna z metody zdefiniowana w klasie
+    private int liczba = -1; //zmienna z metody zdefiniowana w klasie
 
     void przyjmijLIczbe(){  //zaczyna sie metoda
         boolean podanoPoprawnaWarosc= false;
