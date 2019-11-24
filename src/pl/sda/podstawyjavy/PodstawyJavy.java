@@ -6,6 +6,11 @@ public class PodstawyJavy {
         komunikatyDlaLiczb.przyjmijLIczbe();
         System.out.println("Poprawnie wprowadzona wartosc to: " + komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
 
+        komunikatyDlaLiczb.ustawWartoscZmiennejLIczba(105);
+        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+
+        komunikatyDlaLiczb.ustawWartoscZmiennejLIczba(3);
+        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
     }
 
 }

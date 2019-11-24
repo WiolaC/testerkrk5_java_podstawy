@@ -32,4 +32,11 @@ public class KomunikatyDlaLiczb {
     int pobierzOstatniaWartoscLiczby (){
         return liczba;
     }
+    void ustawWartoscZmiennejLIczba(int nowaWartoscLiczby) {
+        if (nowaWartoscLiczby >= 0 && nowaWartoscLiczby <= 9) {
+            liczba = nowaWartoscLiczby;
+        } else {
+            System.out.println("Nowa wartość jest nieprawidłowa");
+        }
+    }
 }
