@@ -1,19 +1,25 @@
 package pl.sda.podstawyjavy;
 
+import pl.sda.podstawyjavy.samochod.Samochod;
+
 public class PodstawyJavy {
     public static void main(String[] args) {
-        KomunikatyDlaLiczb komunikatyDlaLiczb = new KomunikatyDlaLiczb();
-        komunikatyDlaLiczb.przyjmijLIczbe();
-        System.out.println("Poprawnie wprowadzona wartosc to: " + komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+        Samochod bmw = new Samochod("benzynowy", "e60",
+                "BMW","czarny");
+        Samochod fiat = new Samochod("diesiel","Yaris",
+                "Toyota","srebrny");
 
-        komunikatyDlaLiczb.ustawWartoscZmiennejLIczba(105);
-        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+        bmw.jedz();
+        fiat.jedz();
+        bmw.jedz();
+        fiat.jedz();
+        bmw.jedz();
+        //System.out.println(bmw.modelIMarka()); //1 sposob
+        System.out.println(bmw.modelIMarka() +" "+ bmw.stanLicznika()+" km"); //2 sposob
 
-        komunikatyDlaLiczb.ustawWartoscZmiennejLIczba(3);
-        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
-        komunikatyDlaLiczb.ustawWartosciZmiennejLiczba(500,76,10,6,3);
-        System.out.println(komunikatyDlaLiczb.pobierzOstatniaWartoscLiczby());
+        System.out.println(fiat.modelIMarka() + " "+ fiat.stanLicznika()+" km");
     }
+
 
 }
 
