@@ -6,16 +6,21 @@ import java.sql.SQLOutput;
 
 public class PodstawyJavy {
     public static void main(String[] args) {
-        int i = 0;
-        {
-
-            System.out.println(i); // co bez zmian
-            System.out.println(++i); //1 zwiekszona wartosc zanim zostal wykonany kod
-            System.out.println(i);
-            System.out.println(i++); //zwiekszamy wartosc o 1 ale dopiero jak sie kod wykona wiec nie widac
-            System.out.println(i); // drukuje bierzaca wartosc zmiennej ktora juz zostala zmieniona przez wczesniejszy kod
+        int yearOfBirth =1980;
+        if(yearOfBirth < 1980){
+            System.out.println("Rok poniżej 1980");
         }
-    }}
+        else if (yearOfBirth > 1990){
+            System.out.println("Rok powyżej 1990");
+        }
+        else {
+            System.out.println("Rok pomiedzy 1980 a 1990");
+        }
+
+
+    }
+}
+
 
 
 
