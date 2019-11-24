@@ -1,24 +1,28 @@
 package pl.sda.podstawyjavy;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.sql.SQLOutput;
+
 public class PodstawyJavy {
-    public static void main (String[]args){
-        int[][] mojaTablicaInt = {{1,2,3,45},{3,4,5},{5,7,8}};
+    public static void main(String[] args) {
+        int i = 0;
+        {
 
-        for (int i = 0; i<mojaTablicaInt.length; i++){
-            for (int j =0; j<mojaTablicaInt[i].length;j++){
-                System.out.print(mojaTablicaInt[i][j]);
-            }
-            System.out.println();
+            System.out.println(i); // co bez zmian
+            System.out.println(++i); //1 zwiekszona wartosc zanim zostal wykonany kod
+            System.out.println(i);
+            System.out.println(i++); //zwiekszamy wartosc o 1 ale dopiero jak sie kod wykona wiec nie widac
+            System.out.println(i); // drukuje bierzaca wartosc zmiennej ktora juz zostala zmieniona przez wczesniejszy kod
         }
+    }}
 
 
-    }
 
 
-    void wydrukujArgumenty(String[] args) {
-        for (int i = 0; i < args.length; i++) {
-            System.out.println(args[i]);
 
-        }
-    }
-}
+
+
+
+
+
